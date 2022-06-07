@@ -222,9 +222,28 @@
                         "value": "john.doe@salesforce.com",
                         "displayToAgent": true
                         }, {
-                        "label": "field1",
-                        "value": "fieldval",
+                        "label": "ProductIDD",
+                        "value": "bdibdie53",
                         "displayToAgent": true}];
+
+                        embedded_svc.settings.extraPrechatInfo = [{
+                            "entityFieldMaps": [{
+                                "doCreate": false,
+                                "doFind": true,
+                                "fieldName": "ProductId__c",
+                                "isExactMatch": true,
+                                "label": "ProductIDD"
+                             }
+                            //  , {
+                            //     "doCreate": false,
+                            //     "doFind": true,
+                            //     "fieldName": "Email",
+                            //     "isExactMatch": true,
+                            //     "label": "Email"
+                            // }
+                        ],
+                            "entityName": "Contact"
+                            }];
             
                     embedded_svc.init(
                         'https://tcscom-fc-dev-ed.my.salesforce.com',
